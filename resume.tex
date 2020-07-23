@@ -1,0 +1,257 @@
+
+\documentclass[a4paper,10pt]{report}
+\usepackage[margin=0in ]{geometry}
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabu}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage[absolute]{textpos}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+%\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-9pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+%-------------------------
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & #2 \\
+          \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubheadingNew}[4]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+        \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{minipage}[t]{0.3\textwidth}
+\hspace{-15pt}
+\includegraphics[width=2.5cm,clip]{iitg_logo.jpg}
+\end{minipage}
+\begin{textblock*}{30cm}(3.75cm,1cm)
+    \begin{minipage}[t]{0.3\textwidth}
+    \textbf{\huge Shruti Agarwal} \\
+    {Roll Number: 170123059} \\
+    {B.Tech - Mathematics and Computing} \\
+    {Indian Institute Of Technology, Guwahati}
+    \end{minipage}
+\end{textblock*}
+
+\begin{textblock*}{30cm}(14.12cm,1cm)
+    \begin{minipage}[t]{0.3\textwidth}
+        \begin{tabular}[t]{@{} r}
+        +91-9820294489 \\
+        \href{mailto:the.original.shruti@gmail.com}{the.original.shruti@gmail.com}\\
+        \href{mailto:shrut170106054@iitg.ac.in}{shrut170106054@iitg.ac.in}\\
+        \href{https://github.com/the-original-shruti}{github.com/the-original-shruti}\\
+        \href{https://linkedin.com/in/shruti--agarwal/}{linkedin.com/in/shruti--agarwal/}\\
+    % \end{flushleft}
+        \end{tabular}
+    \end{minipage}
+\end{textblock*}
+
+%-----------EDUCATION-----------------
+
+\vspace{-4pt}
+    \section{Education}
+        \begin{center}
+            \begin{tabu} to \linewidth { | X[c] | X[c] | X[c] | X[c] | } \hline
+            \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year} \\\hline
+            B.Tech & IIT Guwahati & 8.89 (Current) & 2017 - Present \\\hline
+            Senior Secondary & Maharastra State Board & 86.46\% & 2017 \\\hline
+            Secondary & Maharastra State Board & 92.20\% & 2015 \\\hline
+            \end{tabu}
+        \end{center}
+
+%-----------EXPERIENCE-----------------
+\vspace{-7pt}
+    \section{Experience}
+        \resumeSubHeadingListStart
+            \resumeSubheading
+              {Google}{Bangalore, India}
+              {SWE Intern, Google Docs Team}{May 2020 - July 2020}
+                \begin{itemize}
+                    \item Developed a Python library that takes VBA Form Storage as input, extracts all properties of the User Form and embedded ActiveX controls and stores it in a Protocol Buffer\\
+                \end{itemize}
+        \resumeItemListEnd
+
+%-----------PROJECTS-----------------
+
+\vspace{-20pt}
+    \section{Projects}
+        \resumeSubHeadingListStart
+            \resumeSubheading
+                {Stock Viewer}{\textit{\small Ongoing}}
+                {Personal Project}{\href{https://git.io/JJlAX}{https://git.io/JJlAX}}
+                    \begin{itemize}
+                        \vspace{-0.5pt}
+                            \item Implemented microservice architecture based Stock Viewer which takes input stock name and returns quotation
+                        \vspace{-2.5pt}
+                            \item Technology stack: Spring Boot, Spring Cloud, Eureka, Zuul
+                    \end{itemize}
+        \vspace{-8pt}
+            \resumeSubheading
+                {Network Simulation using ns-3}{\textit{\small Apr 2020}}
+                {Dr. Manas Khatua, Professor, Dept. of CSE, IIT-G}{\href{https://git.io/JJlAo}{https://git.io/JJlAo}}
+                    \begin{itemize}
+                        \vspace{-0.5pt}
+                            \item Implemented a point-to-point network with dumbbell topology using ns-3
+                        \vspace{-2.5pt}
+                            \item Simulated and analyzed the effects of network bottlenecks with three TCP variants - Hybla, Westwood+, YeAH
+                    \end{itemize}
+        \vspace{-8pt}
+            \resumeSubheading
+                {Socket Programming - Relay based Peer-to-Peer System}{\textit{\small Mar 2020}}
+                {Dr. Manas Khatua, Professor, Dept. of CSE, IIT-G}{\href{https://git.io/JJlAz}{https://git.io/JJlAz}}
+                    \begin{itemize}
+                        \vspace{-0.5pt}
+                            \item Developed a relay-based P2P file exchange system (with client-server architecture) having relay server, peer nodes and peer clients using TCP socket programming in C
+                    \end{itemize}
+        \vspace{-9pt}
+            \resumeSubheading{PintOS}{\textit{\small Aug 2019 - Nov 2019}}
+                {Dr. Arnab Sarkar, Professor, Dept. of CSE, IIT-G}{}
+                    \begin{itemize}
+                        \item Implemented the following for an instructional operating system framework - PintOS
+                            \begin{itemize}
+                                \vspace{-2pt}
+                                    \item Threads Module: Multi-level feedback queue scheduler and synchronisation primitives
+                                \vspace{-2pt}
+                                    \item User Programs: System call handler and system calls (exec, wait, read, write, etc)
+                                \vspace{-2pt}
+                                    \item Virtual Memory Management: Paging, stack growth, swapping, and page replacement
+                            \end{itemize}
+                    \end{itemize}
+        \vspace{-10.5pt}
+            \resumeSubheading
+                {Just Buy}{\textit{\small Apr 2019}}
+                {Dimension Hackathon, Dept. of Mathematics, IIT-G}{\href{https://git.io/JJlA3}{https://git.io/JJlA3}}
+                    \begin{itemize}
+                        \vspace{-0.5pt}
+                            \item Built a website for IIT-G students to sell and buy pre-owned products
+                        \vspace{-3pt}
+                            \item Features : Shopping cart, Product Search and Filter, Purchase Request Queue
+                        \vspace{-3pt}
+                            \item Technology stack: Django, HTML, CSS
+                    \end{itemize}
+        \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------------
+
+\vspace{-7pt}
+    \section{Technical Skills}
+        \resumeSubHeadingListStart
+            \resumeSubItem
+                {Programming Languages:}{C/C++, Python, MATLAB/Octave*}
+            \resumeSubItem
+                {Web Technologies:}{HTML, CSS, Django*}
+            \resumeSubItem
+                {Database management:}{MySQL, MongoDB*}
+            \resumeSubItem
+                {Operating Systems:}{Windows, Linux (shell utilities, git)}
+            \resumeSubItem
+                {Miscellaneous:}{Jupyter Notebook, \LaTeX, Postman, Protocol Buffers \hfill *\textit{Elementary Proficiency}}
+        \resumeSubHeadingListEnd
+
+%-----------COURSES-----------------
+
+\vspace{-3pt}
+    \section{Key Courses Taken}
+        \vspace{-2pt}
+            \begin{multicols}{2}
+                \begin{itemize}[leftmargin = *,itemsep=-3pt]
+                    \item Databases (Theory + Lab)
+                    \item Operating Systems (Theory + Lab)
+                    \item Data Structures and Algorithms (Theory + Lab)
+                    \item Computer Networks (Theory + Lab)
+                    \item Financial Engineering - I \& II (Theory + Lab)
+                    \item Probability Theory and Random Processes
+                    \item Monte Carlo Simulation
+                    \item Discrete Mathematics
+                \end{itemize}
+            \end{multicols}
+
+%-----------ACHIEVEMENTS-----------------
+
+\vspace{-3.5pt}
+    \section{Achievements}
+        \resumeSubHeadingListStart
+            \resumeSubItem{Department Rank 5}{(current) in IIT-G Mathematics and Computing 2021 Batch}
+            \resumeSubItem{J.M.O 2014:}{Bagged the silver medal and obtained the Kaprekar scholarship}
+            \resumeSubItem{M.T.S. Examination 2014:}{Qualified for the state scholarship}
+        \resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULAR-----------------
+
+\vspace{-5.5pt}
+    \section{Extracurricular Activities}
+        \resumeSubHeadingListStart
+            \resumeSubItem{Drawing:}{Secured A grade in elementary and intermediate drawing examinations}
+            \resumeSubItem{Dancing:}{Trained in Classical and Western dance forms with a television appearance}
+            \resumeSubItem{Singing:}{Took music lessons for three years with multiple local concert performances and cleared two exams}
+            \resumeSubItem{Playing the piano:}{Took piano lessons for five years}
+        \resumeSubHeadingListEnd
+
+\end{document}
